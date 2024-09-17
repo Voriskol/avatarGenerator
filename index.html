@@ -3,7 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Avatar Generator</title>
   </head>
-  <body></body>
+  <body>
+    <div class="content">
+      <h1>Avatar Generator</h1>
+      <div class="avatar" id="avatar">
+        <img
+          src="./assets/head.svg"
+          alt="head"
+          class="avatar-detail avatar-head"
+        />
+        <img id="top" alt="top" class="avatar-detail avatar-top" />
+        <img
+          id="eyebrows"
+          alt="eyebrows"
+          class="avatar-detail avatar-eyebrows"
+        />
+        <img id="glasses" alt="glasses" class="avatar-detail avatar-glasses" />
+        <img id="eyes" alt="eyes" class="avatar-detail avatar-eyes" />
+        <img id="mouth" alt="mouthes" class="avatar-detail avatar-mouth" />
+        <img id="body" alt="body" class="avatar-detail avatar-body" />
+        <img id="pet" alt="pet" class="avatar-pet" />
+      </div>
+      <div class="buttons">
+        <button class="button" id="generate-button">Generate</button>
+        <button class="button" id="download-button">Download</button>
+      </div>
+    </div>
+    <script src="./js/html2canvas.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
 </html>
